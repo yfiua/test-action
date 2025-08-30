@@ -1,4 +1,4 @@
-name: action-success
+name: action-fail
 
 on:
   workflow_dispatch:
