@@ -1,0 +1,14 @@
+name: action-test-identity
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    if: github.repository == 'yfiua/test-github-actions'
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: run-success
+      run: ./success.py
